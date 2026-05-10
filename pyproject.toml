@@ -1,0 +1,31 @@
+[project]
+name = "linkedin-post-generator"
+version = "0.1.0"
+description = "LinkedIn post generator using AI"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langchain-groq",
+    "langchain-google-genai",
+    "langchain-core",
+    "langgraph",
+    "pydantic-settings",
+    "fastapi",
+    "uvicorn",
+    "ddgs",
+    "wikipedia",
+    "numexpr",
+    "geopy",
+    "langgraph.prebuilt",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app/core"]
+
+[dependency-groups]
+dev = []

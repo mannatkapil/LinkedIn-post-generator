@@ -1,0 +1,14 @@
+langchain
+langchain-openai
+langchain-groq
+langchain-google-genai
+langchain-core
+langgraph
+pydantic-settings
+fastapi
+uvicorn
+# ddgs
+# wikipedia
+# numexpr
+# geopy
+
